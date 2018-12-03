@@ -1,0 +1,24 @@
+<head>
+	<h1>  Computer Science Course Review for Portland State University </h1>
+	<style>
+	body {
+    		background-image: url("../static/images/Paper.png");
+	}
+</style>
+</head>
+<body>
+
+	
+    	{% for eachReview in data %}
+		
+		<div><p><b>Course Name: {{eachReview["course"]}}</div></b><p> 
+		<div><p>Term Offered: {{eachReview["term"]}}</div></p>
+		<div><p>Instructor: {{eachReview["instructor"]}}</div></p>
+		<div><p style="color:red;">  Ratings: {{eachReview["rating"]}}</div></p>  
+		<div><p style="color:red;">  Reviews: {{eachReview["review"]}}</div></p> 
+		<hr>
+	{% endfor %}
+		
+</body>
+
+
